@@ -18,8 +18,8 @@ public class Exercise3 {
 
         System.out.println(intList.size());
 
-        System.out.println("Press a key to end");
-        System.in.read();
+//        System.out.println("Press a key to end");
+//        System.in.read();
     }
 
 }
