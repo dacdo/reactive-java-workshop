@@ -1,6 +1,7 @@
 package io.javabrains.reactiveworkshop;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Exercise3 {
 
@@ -12,6 +13,10 @@ public class Exercise3 {
         // into a List and print the list and its size
         // TODO: Write code here
 
+        List<Integer> intList = ReactiveSources.intNumbersFlux().toStream().toList();
+        System.out.println(intList);
+
+        System.out.println(intList.size());
 
         System.out.println("Press a key to end");
         System.in.read();
