@@ -10,11 +10,15 @@ public class Exercise2 {
 
         // Print all numbers in the ReactiveSources.intNumbersFlux stream
         // TODO: Write code here
-        ReactiveSources.intNumbersFlux().subscribe(e -> System.out.println(e));
+        ReactiveSources.intNumbersFlux()
+                .log()
+                .subscribe(e -> System.out.println(e));
 
         // Print all users in the ReactiveSources.userFlux stream
         // TODO: Write code here
-        ReactiveSources.userFlux().subscribe(e -> System.out.println(e));
+        ReactiveSources.userFlux()
+                .log()
+                .subscribe(e -> System.out.println(e));
 
 
 //        System.out.println("Hit a key");

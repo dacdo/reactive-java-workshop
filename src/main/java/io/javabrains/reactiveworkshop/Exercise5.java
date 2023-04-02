@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Exercise5 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         // Use ReactiveSources.intNumberMono() and ReactiveSources.userMono()
 
@@ -24,8 +24,9 @@ public class Exercise5 {
                 () -> System.out.println("Completed")
         );
 
-        System.out.println("Press a key to end");
-        System.in.read();
+//        System.out.println("Press a key to end");
+//        System.in.read();
+        Thread.sleep(3000);
     }
 
 }

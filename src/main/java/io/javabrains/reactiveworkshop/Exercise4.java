@@ -5,7 +5,7 @@ import java.util.Optional;
 
 public class Exercise4 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         // Use ReactiveSources.intNumberMono()
 
@@ -24,8 +24,10 @@ public class Exercise4 {
             System.out.println("Mono not emitting");
         }
 
-        System.out.println("Press a key to end");
-        System.in.read();
+//        System.out.println("Press a key to end");
+//        System.in.read();
+
+        Thread.sleep(10000);
     }
 
 }
